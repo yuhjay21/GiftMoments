@@ -1,0 +1,82 @@
+.gallery-image {
+        background: lightgray;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  #page-sidebar .box {
+
+          width: 130%;
+          float: right;
+
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  html {overflow-y: auto;}
+
+  #page-sidebar, #page-content {
+
+          display: block;
+          position: relative;
+          width: 100% !important;
+          clear: both;
+          top: 0;
+          right: 0;
+          overflow: visible;
+
+  }
+
+  #page-content {
+        margin-top: -400px;
+        max-height:51%;
+        overflow: hidden;
+        min-height: 280px;
+        height: auto;
+  }
+
+  #page-sidebar {
+          background-color: #f6f6f6;
+          height: auto;
+          min-height: initial;
+          top: initial;
+         /* overflow-y: auto; */
+          margin-top: 0px;
+  }
+
+  #renderer>canvas {
+      top: 20px;
+      min-width: 300px !important;
+      min-height: 300px !important;
+   }
+
+     #prev-next {
+      width: 101%;
+      }
+}
+
+
+@media only screen and (max-height: 515px) {
+    #page-content { max-height:51%; height: auto; }
+}
+
+.warning {
+    text-align: center;
+    font-size: large;
+    color: red;
+    display: none;
+}
+#text-areas-container .expando_in {
+    max-height: 430px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#text-areas-container .expando_in > div {
+    width: 92%;
+}
+
